@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,7 +24,7 @@ public class UIPopup : MonoBehaviour
     }
     protected virtual void CloseButtonClick()
     {
-        callback?.Invoke();
         UIManager.Instance.PopupClose();
+        callback?.Invoke();
     }
 }
